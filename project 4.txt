@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<title> Project 4 </title>
+		<meta charset="utf-8"/>
+	</head>
+  
+	<body>
+		<h2> Access to Costomer Database </h2>
+		
+		<p>
+		<h4> Please enter the following constraints: </h4>
+		
+  <form action = "proj4_db_access.php" method = "get">
+		<p>CPU NAME:  
+			<input class = "cpuname" input type = "text" name = "cpuname" size = 20 />
+		<p>
+			CPU SPEED: 
+			<form>
+				<input class = "cpuspeed" input type = "radio" name = "cpugreaterthan" value ="cpugreaterthan" checked /> Greater than 
+				<input class = "cpuspeed" input type = "radio" name = "cpuequalto" value ="cpuequalto" /> Equal to
+				<input class = "cpuspeed" input type = "radio" name = "cpulessthan" value ="cpulessthan" /> Less than
+				<input class = "cpuspeed" input type = "text" name = "cpuspeed" size = 20 />
+			</form>
+		<p>
+			MEMORY SPEED: 
+			<form>
+				<input class = "memspeed" input type = "radio" name = "memgreaterthan" value ="memgreaterthan" /> Greater than 
+				<input class = "memspeed" input type = "radio" name = "memequalto" value ="memequalto" /> Equal to
+				<input class = "memspeed" input type = "radio" name = "memlessthan" value ="memlessthan" /> Less than
+				<input class = "memspeed" input type = "text" name = "memspeed" size = 20 />
+				</form>
+    
+		<p>
+			<input type = "submit" value = "Submit Form" name = "submitbutton" formaction="proj4_db_access.php" />
+			<input type = "reset" value = "Clear Form" />
+		</p>
+	</body>
+</html>
